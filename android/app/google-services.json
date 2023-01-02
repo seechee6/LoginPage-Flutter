@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "470448122247",
+    "project_id": "amazing-counter-1a415",
+    "storage_bucket": "amazing-counter-1a415.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470448122247:android:6038006022f473755c4b22",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_first"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470448122247-svl4e9r3iuk33lg9f703j455l87dfbpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_tAHE5Uns3Y-5iHfzLs93EMkUY_EjQiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470448122247-svl4e9r3iuk33lg9f703j455l87dfbpt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
