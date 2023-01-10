@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter_application_first/home.dart';
+import 'package:flutter_application_first/auth.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,72 +15,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: true,
-      theme: ThemeData(
-        primarySwatch: Colors.amber),
-      home: const MyLoginPage(title: 'My Login Page',)
-    );
-  }
-}
-
-class MyLoginPage extends StatefulWidget {
-  const MyLoginPage({Key? key, required this.title}) : super(key: key);
-  final String title;
-
-  @override
-  State<MyLoginPage> createState() => _MyLoginPageState();
-}
-
-class _MyLoginPageState extends State<MyLoginPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Text('LOGIN TO YOUR APP',
-              style: TextStyle(fontWeight: FontWeight.w900, fontSize: 30)),
-          const SizedBox(height: 30),
-          Container(
-            margin: const EdgeInsets.all(5.0),//outer
-            padding: const EdgeInsets.all(5.0),//inner
-            decoration: BoxDecoration(
-                border: Border.all(color: Colors.red),
-                borderRadius: BorderRadius.circular(5.0)),
-            child:
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center, 
-                  children: [
-                    
-              const Text('Username: '),
-              const TextField(
-                  decoration: InputDecoration(prefixIcon: Icon(Icons.person))),
-              
-              
-              const SizedBox(height: 12),
-              const Text('Password: '),
-              const TextField(
-                  obscureText: true,
-                  decoration:
-                      InputDecoration(prefixIcon: Icon(Icons.security))),
-              const SizedBox(height: 12),
-              ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const Home(),
-                        ));
-                  },
-                  child: const Text('Login')),
-            ]),
-          ),
-        ],
-      ),
-    );
+        title: 'Flutter Demo',
+        debugShowCheckedModeBanner: true,
+        theme: ThemeData(primarySwatch: Colors.amber),
+        home: const Authentication());
   }
 }

@@ -12,7 +12,7 @@ class Home extends StatelessWidget {
         body: Container(
           decoration: const BoxDecoration(color: Colors.amber),
           child: const Center(
-            child: Text("Welcom to home page",
+            child: Text("Welcome to home page",
                 style: TextStyle(fontWeight: FontWeight.w900, fontSize: 30)),
           ),
         ));
